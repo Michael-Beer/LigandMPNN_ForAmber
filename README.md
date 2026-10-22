@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts for performing LigandMPNN sequence design using structural snapshots extracted from molecular dynamics (MD) simulations of the class A β-lactamase BlaC.
+This repository contains scripts for performing LigandMPNN sequence design using structural snapshots extracted from molecular dynamics (MD) simulations 
 
 The workflow investigates how conformational differences sampled during MD influence predicted amino-acid sequence preferences in the presence of a bound ligand. Designed sequences are compared with the canonical protein sequence to identify residue-specific mutation frequencies, substitution preferences, and differences between enzyme groups.
 
