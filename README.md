@@ -110,7 +110,7 @@ The frame-extraction script reads the topology and trajectories using MDAnalysis
 Example command:
 
 ```bash
-python scripts/extract_frames.py \
+python scripts/ExtractFrames.py \
     --topology system.parm7 \
     --base . \
     --stride 10
