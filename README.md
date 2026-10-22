@@ -245,28 +245,6 @@ LigandMPNN estimates sequence preferences compatible with the supplied structura
 
 When comparing MD snapshots, the predicted sequence preferences may reflect changes in the sampled structural conformations. Frames from the same trajectory are correlated, so independent MD replicates and trajectory-level summaries should be considered when assessing the robustness of group differences.
 
-Associations between mutation frequency, RMSF, and DFI are exploratory and do not by themselves establish causality.
-
-## Reproducibility
-
-For reproducible analyses:
-
-- Record the LigandMPNN version and model checkpoint.
-- Record Python and dependency versions.
-- Save the random seed used for each design invocation.
-- Retain the mapping between MD replicate, trajectory frame, PDB snapshot, and design output.
-- Use the same reference sequence and residue-numbering scheme throughout the analysis.
-- Keep the original MD topology and trajectories unchanged.
-- Document any residue renaming, atom filtering, or residue-number mapping applied during preprocessing.
-
-## Limitations
-
-- Predicted sequences depend on the structural snapshots, ligand representation, model checkpoint, sampling temperature, and random seed.
-- The treatment of non-standard protonation states through residue-name conversion does not reproduce their original chemical identities explicitly in the sequence model.
-- Ligand context should not be assumed to represent explicit covalent-bond energetics.
-- A high mutation frequency does not necessarily indicate biological tolerance, improved enzyme activity, or increased evolutionary likelihood.
-- Group comparisons should account for the limited number of enzymes and the non-independence of sequences generated from related MD frames.
-
 ## References
 
 Dauparas, J. et al. (2022). *Robust deep learning–based protein sequence design using ProteinMPNN.* Science, 378(6615), 49–56.
